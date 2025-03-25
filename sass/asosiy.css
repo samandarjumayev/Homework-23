@@ -564,7 +564,147 @@
   color: #fff;
 }
 
-.urtaga-olish, .provide .provide-delivery .provide-left > label > button > i, .provide .provide-delivery .provide-right, .dishes, .dishes .dishes-order > h2, .dishes .dishes-order > p, .dishes .dishes-order .cards .card .image, .dishes .dishes-order .dishes-btns > div, .popular .popular-dishes .popular-cards .popular-card .popular-image, .popular .popular-dishes .popular-cards .popular-card .popular-price > span, .popular .popular-dishes .popular-btn > button > i, .delicious .delicious-healthy .delicious-left, .delicious .delicious-healthy .delicious-right {
+.newsletter {
+  height: 450px;
+  background: url(../../images/newsletter.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.newsletter .news-back {
+  background-color: rgba(30, 143, 255, 0.486);
+  width: 100%;
+  height: 100%;
+}
+.newsletter .news-back .our-newsletter {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.newsletter .news-back .our-newsletter .newsletter-left {
+  width: 50%;
+  height: 100%;
+  border-right-style: dashed;
+  border-color: skyblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 42px;
+}
+.newsletter .news-back .our-newsletter .newsletter-left > h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  cursor: context-menu;
+}
+.newsletter .news-back .our-newsletter .newsletter-left > h2::-moz-selection {
+  background-color: rgba(255, 255, 255, 0);
+}
+.newsletter .news-back .our-newsletter .newsletter-left > h2::selection {
+  background-color: rgba(255, 255, 255, 0);
+}
+.newsletter .news-back .our-newsletter .newsletter-left > p {
+  color: #f3feff;
+  margin: 12px 0;
+  cursor: context-menu;
+}
+.newsletter .news-back .our-newsletter .newsletter-left > p::-moz-selection {
+  background-color: rgba(255, 255, 255, 0);
+}
+.newsletter .news-back .our-newsletter .newsletter-left > p::selection {
+  background-color: rgba(255, 255, 255, 0);
+}
+.newsletter .news-back .our-newsletter .newsletter-left > label {
+  margin: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  width: 90%;
+  padding: 5px 5px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.newsletter .news-back .our-newsletter .newsletter-left > label > input {
+  border: none;
+  width: 50%;
+  outline: none;
+  padding: 0 5px;
+}
+.newsletter .news-back .our-newsletter .newsletter-left > label > input::-moz-placeholder {
+  font-style: italic;
+  color: rgb(63, 63, 63);
+}
+.newsletter .news-back .our-newsletter .newsletter-left > label > input::placeholder {
+  font-style: italic;
+  color: rgb(63, 63, 63);
+}
+.newsletter .news-back .our-newsletter .newsletter-left > label > button {
+  border: none;
+  background: linear-gradient(0deg, rgb(30, 64, 255), rgb(0, 149, 255));
+  padding: 7px 14px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.newsletter .news-back .our-newsletter .newsletter-left > label > button:hover {
+  transform: scaleY(1.1) scaleX(1.03);
+}
+.newsletter .news-back .our-newsletter .newsletter-left > label > button:active {
+  transform: scale(0.95);
+  transition: 0.1s;
+}
+.newsletter .news-back .our-newsletter .newsletter-left > label > button > i {
+  background-color: #fff;
+  color: var(--main-color);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+.newsletter .news-back .our-newsletter .newsletter-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 90px;
+}
+.newsletter .news-back .our-newsletter .newsletter-right > h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 12px 0;
+  cursor: context-menu;
+}
+.newsletter .news-back .our-newsletter .newsletter-right > button {
+  padding: 9px 22px;
+  background-color: var(--main-color);
+  border-radius: 17px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  background: linear-gradient(0deg, rgb(30, 64, 255), rgb(0, 149, 255));
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.newsletter .news-back .our-newsletter .newsletter-right > button:hover {
+  transform: scale(1.08);
+}
+.newsletter .news-back .our-newsletter .newsletter-right > button:active {
+  transform: scale(0.9);
+  transition: 0.2s;
+}
+
+.urtaga-olish, .provide .provide-delivery .provide-left > label > button > i, .provide .provide-delivery .provide-right, .dishes, .dishes .dishes-order > h2, .dishes .dishes-order > p, .dishes .dishes-order .cards .card .image, .dishes .dishes-order .dishes-btns > div, .popular .popular-dishes .popular-cards .popular-card .popular-image, .popular .popular-dishes .popular-cards .popular-card .popular-price > span, .popular .popular-dishes .popular-btn > button > i, .delicious .delicious-healthy .delicious-left, .delicious .delicious-healthy .delicious-right, .newsletter .news-back .our-newsletter .newsletter-left > label > button > i {
   display: flex;
   align-items: center;
   justify-content: center;
