@@ -35,6 +35,25 @@
             }
         }
     }
+
+    .delicious {
+        height: 500px;
+
+        .delicious-healthy {
+
+            .delicious-right {
+                &>h2 {
+                    font-size: 39px;
+                }
+                &>p {
+                    font-size: 14px;
+                }
+                &>ul {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -149,6 +168,62 @@
             }
         }
     }
+
+    .popular {
+        height: calc(720px + 230px);
+
+        .popular-dishes {
+            &>h2 {
+                font-size: 30px;
+            }
+            &>p {
+                font-size: 14px;
+            }
+
+            .popular-cards {
+                width: calc(2*220px + 30px + 24px);
+                grid-template-columns: repeat(2, 220px);
+                grid-template-rows: repeat(3, 230px);
+            }
+        }
+    }
+
+    .delicious {
+        height: 630px;
+
+        .delicious-healthy {
+            flex-direction: column;
+            gap: 0px;
+
+            .delicious-left {
+
+                &>img {
+                    width: 330px;
+                }
+            }
+
+            .delicious-right {
+                width: 100%;
+
+                &>h2 {
+                    font-size: 27px;
+                }
+                &>p {
+                    font-size: 12px;
+                    width: 60%;
+                }
+                &>ul {
+                    font-size: 12px;
+                    width: 60%;
+                }
+
+                .delicious-btn {
+                    width: 60%;
+                    justify-content: center;
+                }
+            }
+        }
+    }
 }
 
 
@@ -193,6 +268,79 @@
 
             .dishes-btns {
                 width:  calc(2*180px + 2*17px);
+            }
+        }
+    }
+
+    .popular {
+        height: calc(720px + 230px);
+
+        .popular-dishes {
+            
+            &>h2 {
+                font-size: 22px;
+            }
+            &>p {
+                font-size: 12px;
+            }
+
+            .popular-cards {
+                width: calc(2*180px + 30px + 24px);
+                grid-template-columns: repeat(2, 180px);
+                grid-template-rows: repeat(3, 200px);
+
+                .popular-card {
+                    
+                    .popular-image {
+                        &>img {
+                            width: 85px;
+                            height: 85px;
+                        }
+                    }
+
+                    &>p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .delicious {
+        height: 550px;
+
+        .delicious-healthy {
+            flex-direction: column;
+            gap: 0px;
+
+            .delicious-left {
+
+                &>img {
+                    width: 270px;
+                    height: 270px;
+                    object-fit: cover;
+                }
+            }
+
+            .delicious-right {
+                width: 100%;
+
+                &>h2 {
+                    font-size: 18px;
+                }
+                &>p {
+                    font-size: 8px;
+                    width: 60%;
+                }
+                &>ul {
+                    font-size: 8px;
+                    width: 60%;
+                }
+
+                .delicious-btn {
+                    width: 60%;
+                    justify-content: center;
+                }
             }
         }
     }

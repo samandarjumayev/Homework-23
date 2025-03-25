@@ -839,6 +839,18 @@
   .dishes .dishes-order .dishes-btns {
     width: 574px;
   }
+  .delicious {
+    height: 500px;
+  }
+  .delicious .delicious-healthy .delicious-right > h2 {
+    font-size: 39px;
+  }
+  .delicious .delicious-healthy .delicious-right > p {
+    font-size: 14px;
+  }
+  .delicious .delicious-healthy .delicious-right > ul {
+    font-size: 14px;
+  }
 }
 @media (max-width: 900px) {
   .header .nav > button {
@@ -924,6 +936,48 @@
   .dishes .dishes-order .dishes-btns {
     width: 457px;
   }
+  .popular {
+    height: 950px;
+  }
+  .popular .popular-dishes > h2 {
+    font-size: 30px;
+  }
+  .popular .popular-dishes > p {
+    font-size: 14px;
+  }
+  .popular .popular-dishes .popular-cards {
+    width: 494px;
+    grid-template-columns: repeat(2, 220px);
+    grid-template-rows: repeat(3, 230px);
+  }
+  .delicious {
+    height: 630px;
+  }
+  .delicious .delicious-healthy {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .delicious .delicious-healthy .delicious-left > img {
+    width: 330px;
+  }
+  .delicious .delicious-healthy .delicious-right {
+    width: 100%;
+  }
+  .delicious .delicious-healthy .delicious-right > h2 {
+    font-size: 27px;
+  }
+  .delicious .delicious-healthy .delicious-right > p {
+    font-size: 12px;
+    width: 60%;
+  }
+  .delicious .delicious-healthy .delicious-right > ul {
+    font-size: 12px;
+    width: 60%;
+  }
+  .delicious .delicious-healthy .delicious-right .delicious-btn {
+    width: 60%;
+    justify-content: center;
+  }
 }
 @media (max-width: 600px) {
   .provide {
@@ -953,5 +1007,57 @@
   }
   .dishes .dishes-order .dishes-btns {
     width: 394px;
+  }
+  .popular {
+    height: 950px;
+  }
+  .popular .popular-dishes > h2 {
+    font-size: 22px;
+  }
+  .popular .popular-dishes > p {
+    font-size: 12px;
+  }
+  .popular .popular-dishes .popular-cards {
+    width: 414px;
+    grid-template-columns: repeat(2, 180px);
+    grid-template-rows: repeat(3, 200px);
+  }
+  .popular .popular-dishes .popular-cards .popular-card .popular-image > img {
+    width: 85px;
+    height: 85px;
+  }
+  .popular .popular-dishes .popular-cards .popular-card > p {
+    font-size: 14px;
+  }
+  .delicious {
+    height: 550px;
+  }
+  .delicious .delicious-healthy {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .delicious .delicious-healthy .delicious-left > img {
+    width: 270px;
+    height: 270px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .delicious .delicious-healthy .delicious-right {
+    width: 100%;
+  }
+  .delicious .delicious-healthy .delicious-right > h2 {
+    font-size: 18px;
+  }
+  .delicious .delicious-healthy .delicious-right > p {
+    font-size: 8px;
+    width: 60%;
+  }
+  .delicious .delicious-healthy .delicious-right > ul {
+    font-size: 8px;
+    width: 60%;
+  }
+  .delicious .delicious-healthy .delicious-right .delicious-btn {
+    width: 60%;
+    justify-content: center;
   }
 }/*# sourceMappingURL=asosiy.css.map */
