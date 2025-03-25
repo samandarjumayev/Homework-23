@@ -1,0 +1,99 @@
+.delicious {
+    height: 550px;
+
+    .delicious-healthy {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 22px;
+
+        .delicious-left {
+            width: 50%;
+            height: 100%;
+            @extend .urtaga-olish;
+
+            &>img {
+                width: 70%
+            }
+        }
+
+        .delicious-right {
+            width: 50%;
+            height: 100%;
+            @extend .urtaga-olish;
+            flex-direction: column;
+
+            &>h2 {
+                color: var(--yozuv-rangi);
+                font-size: 45px;
+            }
+            &>p {
+                margin: 15px 0;
+                color: rgb(85, 85, 85);
+            }
+
+            &>ul {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+                list-style-type: none;
+
+                &>li {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    width: 70%;
+                    cursor: pointer;
+
+                    &>i {
+                        transition: 0.4s;
+                        color: var(--main-color);
+                    }
+
+                    &:nth-child(1):hover>i {
+                        transform: rotate(-45deg);
+                    }
+
+                    &:nth-child(2):hover>i {
+                        transform: rotate(-45deg);
+                    }
+                    &:nth-child(3):hover>i {
+                        transform: rotate(-45deg);
+                    }
+                    &:nth-child(4):hover>i {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+
+            .delicious-btn {
+                width: 100%;
+                margin-top: 15px;
+                display: flex;
+                align-items: center;
+                gap: 17px;
+                padding: 9px 0;
+
+                &>.choose {
+                    @include button-2();
+                    padding: 9px 15px;
+                    border: 1px solid var(--main-color);
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                }
+                &>.whats {
+                    @include button-2();
+                    background: #fff;
+                    color: var(--main-color);
+                    padding: 9px 22px;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                    border: 1px solid var(--main-color);
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
