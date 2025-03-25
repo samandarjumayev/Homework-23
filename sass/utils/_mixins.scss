@@ -1,0 +1,10 @@
+.urtaga-olish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin qiymatlar($kenglik, $balandlik) {
+    width: $kenglik;
+    height: $balandlik;
+}

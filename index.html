@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doorhub | Homework</title>
+    <link rel="stylesheet" href="./sass/asosiy.css">
+    <link rel="icon" href="./icons/logo.png">
+    <script src="https://kit.fontawesome.com/dfead5f7ee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- <div class="loader">
+        <img src="./gif/loader.gif" alt="loader gifi bor">
+        <h3>Created by Samandar</h3>
+    </div> -->
+    
+
+    <header class="header">
+        <div class="nav container">
+
+            <div class="logo">
+                <img src="./icons/logo.png" alt="bird logo">
+                <h2>Doorhub</h2>
+            </div>
+
+            <div class="center-nav">
+                
+                <label class="bar" for="main-bar">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input type="checkbox" name="main-bar" id="main-bar" class="main-bar">
+
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <button class="contact-us-btn">
+                Contact Us
+            </button>
+
+
+        </div>
+    </header>
+
+    <section class="provide" id="provide">
+        <div class="provide-delivery container">
+
+            <div class="provide-left">
+                <h1 class="provide-title">
+                    We provide delivery Within 30 min
+                </h1>
+                <p>
+                    Imagine you don't need a diet becouse we provide 
+                    healthy and delicious food for you!
+                </p>
+                <label for="zip-code">
+                    <input type="text" id="discover-inpt" class="discover-inpt" placeholder="Enter zip Code">
+                    <button class="discover-btn">
+                        Discover
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </label>
+            </div>
+
+            <div class="provide-right">
+                <img src="./images/pitsa-deliver.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <script>
+        let loader = document.querySelector(".loader");
+  
+        setTimeout(() => {
+          loader.classList.add("loader-none");
+        }, 4000);
+    </script>
+</body>
+</html>
