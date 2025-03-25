@@ -17,6 +17,24 @@
             }
         }
     }
+
+    .dishes {
+        height: 630px;
+
+        .dishes-order{
+
+            .cards {
+                width: calc(3*180px + 2*17px);
+                height: calc(2*200px + 17px);
+                grid-template-columns: repeat(3, 180px);
+                grid-template-rows: repeat(2, 200px);
+            }
+
+            .dishes-btns {
+                width:  calc(3*180px + 2*17px);
+            }
+        }
+    }
 }
 
 
@@ -87,23 +105,47 @@
             gap: 0px;
 
             &>.provide-left {
-                width: 80%;
+                width: 100%;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
 
-                &>.provide-title {
+                .provide-title {
                     font-size: 40px;
                 }
             }
 
             &>.provide-right {
-                width: 80%;
+                width: 100%;
 
                 &>img {
                     max-width: 600px;
                     min-width: 300px;
                 }
+            }
+        }
+    }
+
+    .dishes {
+        height: calc(630px + 2*270px - 100px);
+
+        .dishes-order{
+            &>h2 {
+                font-size: 35px;
+            }
+            &>p {
+                font-size: 14px;
+            }
+
+            .cards {
+                width: calc(2*220px + 17px);
+                height: calc(3*270px + 2*17px);
+                grid-template-columns: repeat(2, 220px);
+                grid-template-rows: repeat(2, 270px);
+            }
+
+            .dishes-btns {
+                width:  calc(2*220px + 17px);
             }
         }
     }
@@ -125,6 +167,32 @@
                 &>p {
                     font-size: 13px;
                 }
+            }
+        }
+    }
+
+    .dishes {
+        height: calc(630px + 110px);
+
+        .dishes-order{
+
+            &>h2 {
+                font-size: 25px;
+                height: 80px;
+            }
+            &>p {
+                font-size: 13px;
+            }
+
+            .cards {
+                width: calc(2*180px + 17px);
+                height: calc(3*170px + 2*17px);
+                grid-template-columns: repeat(2, 180px);
+                grid-template-rows: repeat(3, 170px);
+            }
+
+            .dishes-btns {
+                width:  calc(2*220px + 17px);
             }
         }
     }

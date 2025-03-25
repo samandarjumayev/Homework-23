@@ -5,5 +5,29 @@
     border: none;
     color: #fff;
     font-weight: 500;
-    box-shadow: var(--main-color) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background:linear-gradient(0deg, rgb(30, 64, 255), rgb(0, 149, 255));
+}
+
+@mixin button-2(){
+    border: none;
+    background:linear-gradient(0deg, rgb(30, 64, 255), rgb(0, 149, 255));
+    color: #fff;
+    cursor: pointer;
+    padding: 6px 5px;
+    padding-left: 12px;
+    border-radius: 30px;
+    margin-right: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+    font-weight: 500;
+    transition: 0.4s;
+
+    &:hover {
+        background:linear-gradient(0deg, rgb(0, 149, 255), rgb(30, 64, 255));
+    }
+    &:active {
+        transform: scale(0.7);
+    }
 }
