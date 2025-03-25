@@ -1,0 +1,125 @@
+.popular{
+    height: 720px;
+
+    .popular-dishes {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &>h2 {
+            color: var(--yozuv-rangi);
+            font-size: 35px;
+            text-align: center;
+        }
+        &>p {
+            margin: 9px 0;
+            width: 60%;
+            text-align: center;
+            color: rgb(82, 82, 82);
+        }
+
+        .popular-cards {
+            width: calc(3*180px + 2*30px + 2*12px);
+            display: grid;
+            grid-template-columns: repeat(3, 180px);
+            grid-template-rows: repeat(2, 230px);
+            gap: 30px;
+            padding: 12px;
+
+            .popular-card {
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+                border-radius: 12px;
+                cursor: context-menu;
+
+                &:hover {
+                    background: linear-gradient(-45deg, rgba(209, 251, 255, 0.353), rgba(103, 182, 255, 0.534));
+                }
+
+                &:nth-child(2)>.popular-image>img {
+                    width: 135px;
+                }
+                &:nth-child(5)>.popular-image>img {
+                    width: 135px;
+                }
+                
+                .popular-image {
+                    border-radius: 12px;
+                    height: 60%;
+                    @extend .urtaga-olish;
+
+                    img {
+                        width: 105px;
+                        height: 105px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                
+                &>p {
+                    width: 60%;
+                    height: 50px;
+                    margin: auto;
+                    text-align: center;
+                }
+
+                .popular-price {
+                    height: calc(100% - 60% - 50px);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 15px;
+
+                    &>b {
+                        font-size: 14px;
+                    }
+
+                    &>span {
+                        width: 15px;
+                        height: 15px;
+                        @extend .urtaga-olish;
+                        transition: 0.4s;
+                        
+                        &:active {
+                            transform: scale(0.7);
+                        }
+
+                        &>i {
+                            font-size: 20px;
+                            color: dodgerblue;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: rgb(106, 181, 255);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .popular-btn {
+            
+            &>button {
+                margin: 5px 0;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                @include button-2();
+
+                >i {
+                    width: 23px;
+                    height: 23px; 
+                    background: linear-gradient(-45deg, white, rgb(225, 246, 255));
+                    border-radius: 50%;
+                    color: var(--main-color);
+                    @extend .urtaga-olish;
+                }
+            }
+        }
+    }
+}

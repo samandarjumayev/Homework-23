@@ -318,7 +318,129 @@
   transform: scale(1.1);
 }
 
-.urtaga-olish, .provide .provide-delivery .provide-left > label > button > i, .provide .provide-delivery .provide-right, .dishes, .dishes .dishes-order > h2, .dishes .dishes-order > p, .dishes .dishes-order .cards .card .image, .dishes .dishes-order .dishes-btns > div {
+.popular {
+  height: 720px;
+}
+.popular .popular-dishes {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.popular .popular-dishes > h2 {
+  color: var(--yozuv-rangi);
+  font-size: 35px;
+  text-align: center;
+}
+.popular .popular-dishes > p {
+  margin: 9px 0;
+  width: 60%;
+  text-align: center;
+  color: rgb(82, 82, 82);
+}
+.popular .popular-dishes .popular-cards {
+  width: 624px;
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  grid-template-rows: repeat(2, 230px);
+  gap: 30px;
+  padding: 12px;
+}
+.popular .popular-dishes .popular-cards .popular-card {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 12px;
+  cursor: context-menu;
+}
+.popular .popular-dishes .popular-cards .popular-card:hover {
+  background: linear-gradient(-45deg, rgba(209, 251, 255, 0.353), rgba(103, 182, 255, 0.534));
+}
+.popular .popular-dishes .popular-cards .popular-card:nth-child(2) > .popular-image > img {
+  width: 135px;
+}
+.popular .popular-dishes .popular-cards .popular-card:nth-child(5) > .popular-image > img {
+  width: 135px;
+}
+.popular .popular-dishes .popular-cards .popular-card .popular-image {
+  border-radius: 12px;
+  height: 60%;
+}
+.popular .popular-dishes .popular-cards .popular-card .popular-image img {
+  width: 105px;
+  height: 105px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.popular .popular-dishes .popular-cards .popular-card > p {
+  width: 60%;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+}
+.popular .popular-dishes .popular-cards .popular-card .popular-price {
+  height: calc(40% - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.popular .popular-dishes .popular-cards .popular-card .popular-price > b {
+  font-size: 14px;
+}
+.popular .popular-dishes .popular-cards .popular-card .popular-price > span {
+  width: 15px;
+  height: 15px;
+  transition: 0.4s;
+}
+.popular .popular-dishes .popular-cards .popular-card .popular-price > span:active {
+  transform: scale(0.7);
+}
+.popular .popular-dishes .popular-cards .popular-card .popular-price > span > i {
+  font-size: 20px;
+  color: dodgerblue;
+  cursor: pointer;
+}
+.popular .popular-dishes .popular-cards .popular-card .popular-price > span > i:hover {
+  color: rgb(106, 181, 255);
+}
+.popular .popular-dishes .popular-btn > button {
+  margin: 5px 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border: none;
+  background: linear-gradient(0deg, rgb(30, 64, 255), rgb(0, 149, 255));
+  color: #fff;
+  cursor: pointer;
+  padding: 6px 5px;
+  padding-left: 12px;
+  border-radius: 30px;
+  margin-right: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+  font-weight: 500;
+  transition: 0.4s;
+}
+.popular .popular-dishes .popular-btn > button:hover {
+  transform: scale(1.1);
+}
+.popular .popular-dishes .popular-btn > button:hover {
+  background: linear-gradient(0deg, rgb(0, 149, 255), rgb(30, 64, 255));
+}
+.popular .popular-dishes .popular-btn > button:active {
+  transform: scale(0.7);
+}
+.popular .popular-dishes .popular-btn > button > i {
+  width: 23px;
+  height: 23px;
+  background: linear-gradient(-45deg, white, rgb(225, 246, 255));
+  border-radius: 50%;
+  color: var(--main-color);
+}
+
+.urtaga-olish, .provide .provide-delivery .provide-left > label > button > i, .provide .provide-delivery .provide-right, .dishes, .dishes .dishes-order > h2, .dishes .dishes-order > p, .dishes .dishes-order .cards .card .image, .dishes .dishes-order .dishes-btns > div, .popular .popular-dishes .popular-cards .popular-card .popular-image, .popular .popular-dishes .popular-cards .popular-card .popular-price > span, .popular .popular-dishes .popular-btn > button > i {
   display: flex;
   align-items: center;
   justify-content: center;
