@@ -987,6 +987,15 @@
   .newsletter .news-back .our-newsletter .newsletter-right > h2 {
     font-size: 30px;
   }
+  .footer .footer-doorhub .footer-infos .footer-left .footer-logo > img {
+    font-size: 17px;
+  }
+  .footer .footer-doorhub .footer-infos .footer-left .footer-logo > h2 {
+    font-size: 20px;
+  }
+  .footer .footer-doorhub .footer-infos .footer-left > p {
+    font-size: 13px;
+  }
 }
 @media (max-width: 600px) {
   .provide {

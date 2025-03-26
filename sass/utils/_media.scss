@@ -247,6 +247,37 @@
             }
         }
     }
+
+    .footer {
+
+        .footer-doorhub {
+
+            .footer-infos {
+
+                .footer-left {
+                    .footer-logo {
+                        &>img {
+                            font-size: 17px;
+                        }
+                        &>h2 {
+                            font-size: 20px;
+                        }
+                    }
+                    &>p {
+                        font-size: 13px;
+                    }
+                }
+
+                .footer-right {
+                    
+                }
+            }
+
+            .footer-icon {
+
+            }
+        }
+    }
 }
 
 
