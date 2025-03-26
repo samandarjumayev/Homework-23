@@ -224,6 +224,29 @@
             }
         }
     }
+
+    .newsletter {
+
+        .news-back {
+
+            .our-newsletter {
+
+                .newsletter-left{
+                    &>h2 {
+                        font-size: 30px;
+                    }
+                    &>p {
+                        font-size: 13px;
+                    }
+                }
+                .newsletter-right {
+                    &>h2 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -340,6 +363,43 @@
                 .delicious-btn {
                     width: 60%;
                     justify-content: center;
+                }
+            }
+        }
+    }
+
+    .newsletter {
+        height: 370px;
+
+        .news-back {
+
+            .our-newsletter {
+                flex-direction: column;
+
+                .newsletter-left{
+                    border: none;
+                    width: 100%;
+                    height: 60%;
+                    text-align: center;
+                    &>label {
+                        width: 100%;
+                    }
+                    &>h2 {
+                        font-size: 25px;
+                    }
+                    &>p {
+                        font-size: 12px;
+                    }
+                }
+                .newsletter-right {
+                    width: 100%;
+                    height: 40%;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 30px;
+                    &>h2 {
+                        font-size: 22px;
+                    }
                 }
             }
         }
