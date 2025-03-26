@@ -996,6 +996,12 @@
   .footer .footer-doorhub .footer-infos .footer-left > p {
     font-size: 13px;
   }
+  .footer .footer-doorhub .footer-infos .footer-right .links .link h3 {
+    font-size: 16px;
+  }
+  .footer .footer-doorhub .footer-infos .footer-right .links .link ul {
+    font-size: 12px;
+  }
 }
 @media (max-width: 600px) {
   .provide {
@@ -1108,5 +1114,23 @@
   }
   .newsletter .news-back .our-newsletter .newsletter-right > h2 {
     font-size: 22px;
+  }
+  .footer .footer-doorhub .footer-infos .footer-left .footer-logo > img {
+    font-size: 12px;
+  }
+  .footer .footer-doorhub .footer-infos .footer-left .footer-logo > h2 {
+    font-size: 15px;
+  }
+  .footer .footer-doorhub .footer-infos .footer-left > p {
+    font-size: 9px;
+  }
+  .footer .footer-doorhub .footer-infos .footer-right .links .link h3 {
+    font-size: 13px;
+  }
+  .footer .footer-doorhub .footer-infos .footer-right .links .link ul {
+    font-size: 9px;
+  }
+  .footer .footer-doorhub .footer-icon p {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=asosiy.css.map */

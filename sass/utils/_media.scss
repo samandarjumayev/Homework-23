@@ -268,14 +268,19 @@
                     }
                 }
 
-                // .footer-right {
-
-                // }
+                .footer-right {
+                    .links {
+                        .link {
+                            h3 {
+                                font-size: 16px;
+                            }
+                            ul {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
             }
-
-            // .footer-icon {
-
-            // }
         }
     }
 }
@@ -431,6 +436,48 @@
                     &>h2 {
                         font-size: 22px;
                     }
+                }
+            }
+        }
+    }
+
+    .footer {
+
+        .footer-doorhub {
+
+            .footer-infos {
+
+                .footer-left {
+                    .footer-logo {
+                        &>img {
+                            font-size: 12px;
+                        }
+                        &>h2 {
+                            font-size: 15px;
+                        }
+                    }
+                    &>p {
+                        font-size: 9px;
+                    }
+                }
+
+                .footer-right {
+                    .links {
+                        .link {
+                            h3 {
+                                font-size: 13px;
+                            }
+                            ul {
+                                font-size: 9px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer-icon {
+                p {
+                    font-size: 13px;
                 }
             }
         }
